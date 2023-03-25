@@ -1,14 +1,18 @@
 window.addEventListener("load", function(){
   const form = document.querySelector("form");
-  form.addEventListener("submit", surveySubmission);
+  form.addEventListener("submit", function(e) { surveySubmission(e);});
 })
 
- const rangeInputs = document.querySelector('input[name="range"]:checked');
+ const rangeInput = document.querySelector('input[name="range"]:checked');
+
 
 function surveySubmission(e) {
   e.preventDefault();
-  console.log("hello");
+  
+  console.log(rangeInput);
+
 }
+
 // const rangeInput = document.querySelector('input[name="range"]');
 // const defencesInput = document.querySelector('input[name="defences"]');
 // const roleInput = document.querySelector('input[name="role"]');
@@ -22,9 +26,7 @@ function surveySubmission(e) {
 //   let check = console.log("hello?");
 //   return check;
 
-//   if (rangeInput.className === "close") {
-//     console.log("Close Quarters Combat");
-// }
+//   
 
 
 //}
