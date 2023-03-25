@@ -1,26 +1,36 @@
 window.addEventListener("load", function(){
   const form = document.querySelector("form");
-  form.addEventListener("submit", surveySubmition);
+  form.addEventListener("submit", surveySubmission);
 })
-const rangeInput = document.querySelector('input[name="range"]');
 
+ const rangeInputs = document.querySelector('input[name="range"]:checked');
 
-
-
-
-
-
-
-function surveySubmition(e) {
-   e.preventDefault();
-  let check = console.log("hello?");
-  return check;
-
- 
-
-
+function surveySubmission(e) {
+  e.preventDefault();
+  console.log("hello");
 }
- 
+// const rangeInput = document.querySelector('input[name="range"]');
+// const defencesInput = document.querySelector('input[name="defences"]');
+// const roleInput = document.querySelector('input[name="role"]');
+// const trainingInput = document.querySelector('input[name="training"]');
+// const petInput = document.querySelector('input[name="pet"]');
+
+// // made variables out of the answers for the questions:
+
+// function surveySubmission(e) {
+//    e.preventDefault();
+//   let check = console.log("hello?");
+//   return check;
+
+//   if (rangeInput.className === "close") {
+//     console.log("Close Quarters Combat");
+// }
+
+
+//}
+
+
+ // trying to make a damn function that will work with one of 3 answers, and a catch all for simple code.
 
 
 
