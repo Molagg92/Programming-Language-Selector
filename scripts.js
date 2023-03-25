@@ -1,44 +1,59 @@
-
-
-const range = document.querySelector("range");
-const defences = document.getElementById('defences');
-const role = document.getElementById('role');
-const training = document.getElementById('training');
-const pet = document.getElementById('pet');
-
-const pythonMan= document.getElementById('pythonMan');
-const rubyLas = document.getElementById('rubyLas');
-const swiftWoman = document.getElementById('rangerWoman');
-
-const rangeChoice = range.querySelector("input:checked").id;
-const defenceChoice = defences.querySelector("input:checked").id;
-const roleChoice = role.querySelector("input:checked").id;
-const trainingChoice = training.querySelector("input:checked").id;
-const petChoice = pet.querySelector("input:checked").id;
-
-let result;
-
-if (rangeChoice === 'close' && defenceChoice === 'tough' && roleChoice === 'leader') {
-  let result = pythonMan;
-} else if (rangeChoice === 'distance' && defenceChoice === 'smart' && roleChoice === 'support') {
-  let result = rubyLas;
-} else if (rangeChoice === '50/50' && defenceChoice === 'slick' && roleChoice === 'slick') {
-  let result = swiftWoman;
-}
+window.addEventListener("load", function(){
+  const form = document.querySelector("form");
+  console.log("hello?");
+})
 
 
 
-if (result === pythonMan) {
-  pythonMan.removeAttribute('class');
-} else if (result === rubyLas) {
-  rubyLas.removeAttribute('class');
-} else if (result === swiftWoman) {
-  swiftWoman.removeAttribute('class')
-}
-window.addEventListener("load", function() {
-  const  form = document.querySelector("form");
-  form.addEventListener("submit", surveySubmition)
-});
+
+
+
+
+//----------------^^^^^^^^^^^^^^^ third try^^^^^^^^----------
+
+// const range = document.querySelector("range");
+// const defences = document.getElementById('defences');
+// const role = document.getElementById('role');
+// const training = document.getElementById('training');
+// const pet = document.getElementById('pet');
+
+// const pythonMan= document.getElementById('pythonMan');
+// const rubyLas = document.getElementById('rubyLas');
+// const swiftWoman = document.getElementById('rangerWoman');
+
+// const rangeChoice = range.querySelector("input:checked").id;
+// const defenceChoice = defences.querySelector("input:checked").id;
+// const roleChoice = role.querySelector("input:checked").id;
+// const trainingChoice = training.querySelector("input:checked").id;
+// const petChoice = pet.querySelector("input:checked").id;
+
+// let result;
+
+// if (rangeChoice === 'close' && defenceChoice === 'tough' && roleChoice === 'leader') {
+//   let result = pythonMan;
+// } else if (rangeChoice === 'distance' && defenceChoice === 'smart' && roleChoice === 'support') {
+//   let result = rubyLas;
+// } else if (rangeChoice === '50/50' && defenceChoice === 'slick' && roleChoice === 'slick') {
+//   let result = swiftWoman;
+// }
+
+
+
+// if (result === pythonMan) {
+//   pythonMan.removeAttribute('class');
+// } else if (result === rubyLas) {
+//   rubyLas.removeAttribute('class');
+// } else if (result === swiftWoman) {
+//   swiftWoman.removeAttribute('class')
+// }
+// window.addEventListener("load", function() {
+//   const  form = document.querySelector("form");
+//   form.addEventListener("submit", surveySubmition)
+// });
+
+
+// ---------^^^^^^secod try^^^^^^----------
+
 //   // determine the result based on the user's choices
 //   let result;
 //   if (rangeChoice === 'close' && defencesChoice === 'slick' && roleChoice === 'leader' && trainingChoice === 'dojo' && petChoice === 'owl') {
@@ -95,3 +110,4 @@ window.addEventListener("load", function() {
 //   const snake = document.getElementById("snake").value;
 
 // } 
+//-------------------^^^^^^^^^^^^^ first try^^^^^^^^^^^^----------------
