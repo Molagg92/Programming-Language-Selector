@@ -2,17 +2,25 @@ window.addEventListener("load", function(){
   const form = document.querySelector("form");
   form.addEventListener("submit", surveySubmition);
 })
+const rangeInput = document.querySelector('input[name="range"]');
+
+
+
+
+
+
+
 
 function surveySubmition(e) {
    e.preventDefault();
   let check = console.log("hello?");
   return check;
 
+ 
 
 
-  
 }
-
+ 
 
 
 
