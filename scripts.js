@@ -1,10 +1,17 @@
 window.addEventListener("load", function(){
   const form = document.querySelector("form");
-  console.log("hello?");
+  form.addEventListener("submit", surveySubmition);
 })
 
+function surveySubmition(e) {
+   e.preventDefault();
+  let check = console.log("hello?");
+  return check;
 
 
+
+  
+}
 
 
 
