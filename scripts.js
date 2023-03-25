@@ -3,13 +3,15 @@ window.addEventListener("load", function(){
   form.addEventListener("submit", function(e) { surveySubmission(e);});
 })
 
- const rangeInput = document.querySelector('input[name="range"]:checked');
+ 
 
 
 function surveySubmission(e) {
   e.preventDefault();
+const rangeInput = document.querySelector('input[name="range"]:checked');
+
   
-  console.log(rangeInput);
+  console.log(rangeInput.className);
 
 }
 
