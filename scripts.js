@@ -2,18 +2,34 @@ window.addEventListener("load", function(){
   const form = document.querySelector("form");
   form.addEventListener("submit", function(e) { surveySubmission(e);});
 })
-
- 
-
-
 function surveySubmission(e) {
   e.preventDefault();
-const rangeInput = document.querySelector('input[name="range"]:checked');
+
+  const rangeInput = document.querySelector('input[name="range"]:checked').value;
+  const pythonMan= document.getElementById('pythonMan');
+  let result = "undefined"
+  
+  if (rangeInput === "close") {
+    pythonMan.removeAttribute('class');
+    result = pythonMan;
+  }
 
   
-  console.log(rangeInput.className);
-
+  
+  console.log(result);
 }
+
+
+
+  // const defencesInput = document.querySelector('input[name="defences"]:checked');
+  // const roleInput = document.querySelector('input[name="role"]:checked');
+  // const trainingInput = document.querySelector('input[name="training"]:checked');
+  // const petInput = document.querySelector('input[name="pet"]:checked');
+
+
+
+
+
 
 // const rangeInput = document.querySelector('input[name="range"]');
 // const defencesInput = document.querySelector('input[name="defences"]');
