@@ -24,19 +24,26 @@ function surveySubmission(e) {
     result = pythonMan;
     rubyLas.setAttribute("class", "hidden");
     swiftWoman.setAttribute("class", "hidden");
+    tryAgain.setAttribute("class", "hidden");
   } else if (rangeInput === "distance" && defencesInput === "smart" && roleInput === "support"){
     rubyLas.removeAttribute('class');
     result = rubyLas;
     pythonMan.setAttribute("class", "hidden");
     swiftWoman.setAttribute("class", "hidden");
+    tryAgain.setAttribute("class", "hidden");
   } else if (rangeInput === "50/50" && defencesInput === "slick" && roleInput === "solo"){
     swiftWoman.removeAttribute('class');
     result = swiftWoman;
     pythonMan.setAttribute("class", "hidden");
     rubyLas.setAttribute("class", "hidden");
+    tryAgain.setAttribute("class", "hidden");
   } 
-  else {
-    tryAgain.style.display = ("block");
+
+
+
+  
+  else if(result = "undefined"){
+    tryAgain.removeAttribute("class");
     result = tryAgain;
     pythonMan.setAttribute("class", "hidden");
     rubyLas.setAttribute("class", "hidden");
