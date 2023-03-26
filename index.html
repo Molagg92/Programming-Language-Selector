@@ -1,92 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-  <link rel="stylesheet" href="CSS/styles.css" type="text/css">
-  <script src="scripts.js"></script>
-  <title>Which language Class are you?</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="CSS/styles.css" type="text/css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+		<script src="scripts.js"></script>
+		<title>Which language Class are you?</title>
 	</head>
 <body>
-	<h1>Ruby, Python, or Swift?</h1>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<div class="holder">		
+
+
+	<div class="card" style="width: 40rem;">
+		<div class="card-body">
+			<div class="container">
+				<p class="card-text">
+
+					<h1 class="card-title">Ruby, Python, or Swift?</h1>
+					<h6 class="card-subtitle mb-2 text-body-secondary">Dont know where to begin your journey? Answer a few Questions:</h6>
+						<form>
+							<div class="rangeQuestion">
+								<h4> How do you like your combat?</h4>
+								<input type="radio" name="range" class="close" value="close"> Close Quarters Combat
+								</input>
+								<br>
+								<input type="radio" name="range" class="distance" value="distance"></input>
+								<label for="distance">Long Range Fighting</label>
+								<br>
+								<input type="radio" name="range" class="50/50" value="50/50"></input>
+								<label for="50/50">Profissient in Both, Master of Neither</label>
+							</div>
+							<div class="defencesQuestion">
+								<h4> How do you handle handle danger? </h4>
+								<input type="radio" name="defences" class="slick" value="slick">
+								<label for="slick"> Slick and Easy to Miss </label>
+								<br>
+								<input type="radio" name="defences" class="tough" value="tough">
+								<label for="tough"> Resilient, Hard to Kill </label>
+								<br>
+								<input type="radio" name="defences" class="smart" value="smart">
+								<label for="smart"> Planned Ahead, always have a plan B. </label>
+							</div>
+							<div class="roleQuestion">
+								<h4> What is your role in a team? </h4>
+								<input type="radio" name="role" class="leader" value="leader">
+								<label for="leader"> Leader: Success or Failure depends on YOU! </label>
+								<br>
+								<input type="radio" name="role" class="support" value="support">
+								<label for="support"> Support: trust your team, and be trustworthy.  </label>
+								<br>
+								<input type="radio" name="role" class="solo" value="solo">
+								<label for="solo"> Lone Wolf: No Price to High for Full Self-Ownership </label>
+							</div>
+							<div class="trainingQuestion">
+								<h4> Where do you go to train? </h4>
+								<input type="radio" name="training" class="library" value="library">
+								<label for="library"> The Librarium </label>
+								<br>
+								<input type="radio" name="training" class="dojo" value="dojo">
+								<label for="dojo"> The Old Master's Dojo </label>
+								<br>
+								<input type="radio" name="training" class="aim" value="aim">
+								<label for="aim"> The Archery Range </label>
+							</div>
+							<div class="petQuestion">
+								<h4>If you had to pick a pet, which one?</h4>
+								<input type="radio" name="pet" class="boar" value="boar">
+								<label for="boar"> The Loyal Boar, Stout and Brave of Heart. </label>
+								<br>
+								<input type="radio" name="pet" class="owl" value="owl">
+								<label for="owl"> A Wise, Trustworthy Old Owl Friend.   </label>
+								<br>
+								<input type="radio" name="pet" class="snake" value="snake">
+								<label for="snake"> Your Trained Cobra! Useful, but Can You Really Trust Her? </label>
+							</div>
+							<br>
+							<button type="submit">Submit</button>
+						</form>
+						<div id="rangerWoman" class="hidden">
+							<div class="card" style="width: 18rem;">
+							
+								<img src="img/swift.jpeg" class="card-img-top" alt="A typical python dev's going-out-to-town get up">
+								<div class="card-body">
+								<p class="card-text"><h4>Swift!</h4>You heard the whispers of the Forest Queen since you where little. You have always known the language of Swift. Now it has been awakened, and you will the first step twards true mastery of Swift!</p>
+							</div>
+						</div>
+					</div>
+					<div id="pythonMan" class="hidden">
+						<div class="card" style="width: 18rem;">
+							<img src="img/python.jpeg" alt="A typical python dev's going-out-to-town get up" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text"><h2>Python!</h2><br> The language you should begin with, written by the stars, is set to the Language of Pythons! An ancient language, spoken only by The King of Snakes, to his legeon of beasts.</p>
+							</div>
+						</div>
+					</div>
+					<div id="rubyLas" class="hidden">
+						<div class="card" style="width: 18rem;">
+							<img src="img/ruby.jpeg" class="card-img-top" alt="A typical python dev's going-out-to-town get up">
+							<div class="card-body">
+								<p class="card-text"><h2>Ruby!</h2> The GrandWizards have peeked into the secrets of Crystal Ball, Ruby is foretolled to you your beginning language! A languae known only to those who have True Pheonix bloodlines </p>
+							</div>
+						</div>
+					</div>
+					<div id="tryAgain" class="hidden">
+						<div class="card" style="width: 18rem;">
+							<img src="img/tryAgain.jpg" class="card-img-top" alt="Please try agin">
+							<div class="card-body">
+								<p class="card-text"><h2> Please try again! </h2>Please forgive us, while we work out the bugs!</p>
+							</div>
+						</div>
+					</div>
 
 
 
-	<form>
-		<div class="rangeQuestion">
-			<h4> How do you like your combat?</h4>
-			<input type="radio" name="range" class="close" value="close"> Close Quarters Combat
-		</input>
-			<br>
-			<input type="radio" name="range" class="distance" value="distance"></input>
-			<label for="distance">Long Range Fighting</label>
-			<br>
-			<input type="radio" name="range" class="50/50" value="50/50"></input>
-			<label for="50/50">Profissient in Both, Master of Neither</label>
-		</div>
-		<div class="defencesQuestion">
-			<h4> How do you handle handle danger? </h4>
-			<input type="radio" name="defences" class="slick" value="slick">
-			<label for="slick"> Slick and Easy to Miss </label>
-			<br>
-			<input type="radio" name="defences" class="tough" value="tough">
-			<label for="tough"> Resilient, Hard to Kill </label>
-			<br>
-			<input type="radio" name="defences" class="smart" value="smart">
-			<label for="smart"> Planned Ahead, always have a plan B. </label>
-		</div>
-		<div class="roleQuestion">
-			<h4> What is your role in a team? </h4>
-			<input type="radio" name="role" class="leader" value="leader">
-			<label for="leader"> Leader: Success or Failure depends on YOU! </label>
-			<br>
-			<input type="radio" name="role" class="support" value="support">
-			<label for="support"> Support: trust your team, and be trustworthy.  </label>
-			<br>
-			<input type="radio" name="role" class="solo" value="solo">
-			<label for="solo"> Lone Wolf: No Price to High for Full Self-Ownership </label>
-		</div>
-		<div class="trainingQuestion">
-			<h4> Where do you go to train? </h4>
-			<input type="radio" name="training" class="library" value="library">
-			<label for="library"> The Librarium </label>
-			<br>
-			<input type="radio" name="training" class="dojo" value="dojo">
-			<label for="dojo"> The Old Master's Dojo </label>
-			<br>
-			<input type="radio" name="training" class="aim" value="aim">
-			<label for="aim"> The Archery Range </label>
-		</div>
-		<div class="petQuestion">
-			<h4>If you had to pick a pet, which one?</h4>
-			<input type="radio" name="pet" class="boar" value="boar">
-			<label for="boar"> The Loyal Boar, Stout and Brave of Heart. </label>
-			<br>
-			<input type="radio" name="pet" class="owl" value="owl">
-			<label for="owl"> A Wise, Trustworthy Old Owl Friend.   </label>
-			<br>
-			<input type="radio" name="pet" class="snake" value="snake">
-			<label for="snake"> Your Trained Cobra! Useful, but Can You Really Trust Her? </label>
-		</div>
-		<br>
-		<button type="submit">Submit</button>
-	</form>
 
-  <div id="pythonMan" class="hidden">
-		<img src="img/python.jpeg" alt="A typical python dev's going-out-to-town get up">
+
+
+				</p>
+			</div>
+		</div>
 	</div>
 
-	<div id="rubyLas" class="hidden">
-		<img src="img/ruby.jpeg" alt="A typical python dev's going-out-to-town get up">
-  </div>
 
-	<div id="rangerWoman" class="hidden">
-		<img src="img/swift.jpeg" alt="A typical python dev's going-out-to-town get up">
-	</div>
-
-	<div id="tryAgain" class="hidden">
-		<h4> Please try again! </h4>
-		<img src="img/tryAgain.jpg" alt="Please try agin">
-	</div>
-
-
+</div>	
 </body>
 </html>
+
+
+
+
+
+  <!--  
+	
+
+   
+    
+       
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+ 
+
+
+
+-->
